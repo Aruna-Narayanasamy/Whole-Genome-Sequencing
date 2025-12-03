@@ -1,6 +1,6 @@
 # Quality Assesment of FASTQ Files
- - This document describes the commands used to run FastQC on the raw sequencing files and how to open the resulting HTML reports.
- - It include the interpretation of HTML file results.
+ - This file describe the steps to run FastQC and view the QC report files.
+ - It include the interpretation of QC report file results.
  ## 1.Creating output directory for FastQC
   - Before running FastQC, a directory was created to store all QC reports.
   - **Command**: mkdir QC_Reports
@@ -20,3 +20,4 @@
   - **Commands**: cd Raw_Data/QC_Reports, python3 -m http.server 8000.
   - Codespace will show a prompt to **Open in Browser**.
   - In the browser, the QC report files will be displayed and can be opened correctly.
+
