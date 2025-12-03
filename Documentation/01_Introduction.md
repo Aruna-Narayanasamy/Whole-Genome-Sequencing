@@ -10,12 +10,14 @@
   - The virus was first identified in December 2019 in Wuhan, China and rapidly spread worldwide leading to a global pandemic.
   - *SARS-CoV-2 is an RNA virus* belonging to the Coronaviridae family. It has a positive-sense single-stranded RNA genome approximately *29.9 kb in length* making it one of the largest genomes among RNA viruses.
   - One of the most important features of SARS-CoV-2 is its *ability to mutate over time* which leads to emergence of new viral variants.
-  ### COVID-19 variants
+    
+   **COVID-19 variants:**
+   
      1. Alpha variant(B.1.1.7): Shows increased transmissibility compared to earlier strains. Identified in United Kingdom. 
      
      2. Delta variant(B.1.617.2): Higher infectiousness and association with more severe disease. Identified in India, globally dominant in 2021.
      
-     3. Omicron variant(B.1.1.529): emerged as large number of mutations especially in the spike protein leading to enhanced immune evasion and rapid spread.
+     3. Omicron variant(B.1.1.529): Emerged as large number of mutations especially in the spike protein leading to enhanced immune evasion and rapid spread.
    
  ## Objective of this project
   - This project aims to perform *Whole Genome Sequencing analysis of SARS-CoV-2 using publicly available reference and raw sequencing data*
@@ -36,4 +38,5 @@
    8. Variant Filter
    9. Variant Annotation
    10. Variant Validation
+
 
