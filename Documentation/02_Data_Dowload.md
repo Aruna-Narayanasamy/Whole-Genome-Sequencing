@@ -29,6 +29,7 @@
    - The .gz FASTQ files were decompressed using gunzip commands:
      - gunzip ERR5743893_1.fastq.gz
      - gunzip ERR5743893_2.fastq.gz
-  - After decompression files are ERR5743893_1.fastq, ERR5743893_2.fastq 
+  - After decompressing the FASTQ files, the resulting ERR5743893_1.fastq and ERR5743893_2.fastq saved in Raw_Data directory.
       
      
+
