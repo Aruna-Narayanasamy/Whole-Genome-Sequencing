@@ -16,8 +16,12 @@
       - ERR5743893_2_fastqc.zip
 
  ## 3.Opening FastQC HTML Files
-  - GitHub cannot display FastQC HTML reports properly. To open the HTML file simple python HTTP server command needed.
+  - GitHub cannot display FastQC HTML reports properly. This is because GitHub’s preview system blocks the CSS, JavaScript, and image files that FastQC uses to display graphs and formatting.
+  - As a result, the report may appear unformatted, missing images or show only plain text.
+  - To view the full FastQC report correctly the HTML file must be opened locally or through a Python HTTP server inside Codespaces.
+  - To open the HTML file through python HTTP server commands needed.
   - **Commands**: cd Raw_Data/QC_Reports, python3 -m http.server 8000.
   - Codespace will show a prompt to **Open in Browser**.
   - In the browser, the QC report files will be displayed and can be opened correctly.
+
 
