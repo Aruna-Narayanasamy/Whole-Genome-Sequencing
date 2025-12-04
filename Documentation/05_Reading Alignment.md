@@ -2,8 +2,10 @@
  - The next step in the workflow is aligning the high-quality FASTQ reads to the reference genome.
  ## 1. Input Files for Alignment
   - The following files were used:
-      Reference Genome (Indexed): Output_Files/Indexing/MN908947.3.fasta
-      Decompressed FASTQ Files: Output_Files/ERR5743893_1.fastq, Output_Files/ERR5743893_2.fastq
+    
+      -Reference Genome (Indexed): Output_Files/Indexing/MN908947.3.fasta
+    
+      -Decompressed FASTQ Files: Output_Files/ERR5743893_1.fastq, Output_Files/ERR5743893_2.fastq
 
 ## 2.Aligning Reads to the Reference Genome
  - BWA aligns paired-end sequencing reads to the indexed reference genome.
@@ -11,7 +13,7 @@
    
       bwa mem /workspaces/Whole-Genome-Sequencing/Output_Files/Indexing/MN908947.3.fasta ERR5743893_1.fastq ERR5743893_2.fastq > ERR5743893.sam 
 
-- This generates SAM file (ERR5743893.sam)
+ - This generates SAM file (ERR5743893.sam)
    
 ## 3.Converting SAM to BAM
  - SAM files are large and uncompressed.
