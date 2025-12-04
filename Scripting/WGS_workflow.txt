@@ -1,0 +1,77 @@
+    1  mkdir Reference_Genome
+    2  mkdir Raw_Data
+    3  wget -nc ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR574/003/ERR5743893/ERR5743893_1.fastq.gz
+    4  wget -nc ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR574/003/ERR5743893/ERR5743893_2.fastq.gz
+    5  mv reference_Genome/ERR5743893_1.fastqz reference_Genome/ERR5743893_2.fastqz Raw_Data/ 
+    6  ls
+    7  mv Reference_Genome/ERR5743893_1.fastq.gz Reference_Genome/ERR5743893_2.fastq.gz Raw_Data/ 
+    8  mv ERR5743893_1.fastq.gz ERR5743893_2.fastq.gz Raw_Data/ 
+    9  ls
+   10  ls Raw_Data
+   11  mkdir Output_Files
+   12  fastqc  ERR5743893_1.fastq.gz ERR5743893_2.fastq.gz 
+   13  cd Raw_Data
+   14  ls
+   15  fastqc ERR5743893_1.fastq.gz ERR5743893_2.fastq.gz -o QC_Reports/ 
+   16  fastqc ERR5743893_1.fastq.gz ERR5743893_2.fastq.gz ./-o../Output_Files/QC_Reports
+   17  ls ../Output_Files/
+   18  pwd
+   19  fastqc ERR5743893_1.fastq.gz ERR5743893_2.fastq.gz -o /workspaces/Whole-Genome-Sequencing/Output_Files/QC_Reports/ 
+   20  pwd
+   21  cd ../Output_Files/QC_Reports
+   22  pwd
+   23  cd
+   24  pwd
+   25  ls
+   26  find /workspaces/Whole-Genome-Sequencing -type d -name "Output_Files"
+   27  ls /workspaces/Whole-Genome-Sequencing/Output_Files
+   28  mkdir /workspaces/Whole-Genome-Sequencing/Output_Files/QC_Reports
+   29  ls /workspaces/Whole-Genome-Sequencing/Output_Files
+   30  cd /workspaces/Whole-Genome-Sequencing/Raw_Data
+   31  fastqc ERR5743893_1.fastq.gz ERR5743893_2.fastq.gz -o /workspaces/Whole-Genome-Sequencing/Output_Files/QC_Reports/
+   32  gunzip -dc ERR5743893_1.fastq.gz > /workspaces/Whole-Genome-Sequencing/Output_Files/ERR5743893_1.fastq 
+   33  gunzip -dc ./ERR5743893_2.fastq.gz > /workspaces/Whole-Genome-Sequencing/Output_Files/ERR5743893_2.fastq  
+   34  mkdir -p /Workspace/Whole-Genome-Sequencing/Output_Files/Indexing
+   35  mkdir -p /workspace/Whole-Genome-Sequencing/Output_Files/Indexing
+   36  mkdir -p /workspaces/Whole-Genome-Sequencing/Output_Files/Indexing
+   37  cp /workspaces/Whole-Genome-Sequencing/Reference_Genome/MN908947.fasta /workspaces/Whole-Genome-Sequencing/Output_Files/Indexing/
+   38  cp /workspaces/Whole-Genome-Sequencing/Reference_Genome/MN908947.3.fasta /workspaces/Whole-Genome-Sequencing/Output_Files/Indexing/ 
+   39  cd /workspaces/Whole-Genome-Sequencing/Output_Files/Indexing
+   40  ls
+   41  bwa index ./MN908947.3.fasta
+   42  cd /workspaces/Whole-Genome-Sequencing/Output_Files/
+   43  bwa mem ../Output_Files/Indexing/MN908947.fasta ./ERR5743893_1.fastq ./ERR5743893_2.fastq > ERR5743893.sam
+   44  ls /workspaces/Whole-Genome-Sequencing/Output_Files/Indexing
+   45  cd /workspaces/Whole-Genome-Sequencing/Output_Files
+   46  ls
+   47  mkdir /workspaces/Whole-Genome-Sequencing/Output_Files/Alignment_Files
+   48  mv ./ERR5743893.sam ./Alignment_Files/
+   49  mv /workspaces/Whole-Genome-Sequencing/Output_Files/ERR5743893.sam /workspaces/Whole-Genome-Sequencing/Output_Files/Alignment_Files/
+   50  find /workspaces/Whole-Genome-Sequencing -name "ERR5743893.sam"
+   51  cd /workspaces/Whole-Genome-Sequencing/Output_Files/Alignment_Files
+   52  ls
+   53  samtools view -@ 20 -S -b ERR5743893.sam > ERR5743893.bam
+   54  samtools sort -@ 4 -o ERR5743893.sorted.bam ERR5743893.bam 
+   55  ls -l
+   56  cd /workspaces/Whole-Genome-Sequencing/Output_Files
+   57  ls
+   58  bwa mem /workspaces/Whole-Genome-Sequencing/Output_Files/Indexing/MN908947.3.fasta ERR5743893_1.fastq ERR5743893_2.fastq > ERR5743893.sam 
+   59  ls -l ./ERR5743893.sam
+   60  samtools view -@ 20 -S -b ERR5743893.sam > ERR5743893.bam
+   61  samtools sort -@ 32 -o ERR5743893.sorted.bam ERR5743893.bam
+   62  samtools sort -@ 4 -o ERR5743893.sorted.bam ERR5743893.bam 
+   63  mv ./ERR5743893.sam ./ERR5743893.bam ./ERR5743893.sorted.bam ./ERR5743893.sorted.bam.bai ./Alignment_Files/
+   64  cd /workspaces/Whole-Genome-Sequencing/Output_Files/Indexing
+   65  samtools faidx MN908947.fasta
+   66  samtools faidx MN908947.3.fasta 
+   67  ls -l
+   68  cd /workspaces/Whole-Genome-Sequencing/Output_Files/Indexing
+   69  head -n 5 MN908947.3.fasta
+   70  freebayes -f /workspaces/Whole-Genome-Sequencing/Output_Files/Indexing/MN908947.3.fasta ERR5743893.sorted.bam > ERR5743893.vcf
+   71  freebayes -f /workspaces/Whole-Genome-Sequencing/Output_Files/Indexing/MN908947.3.fasta /workspaces/Whole-Genome-Sequencing/Output_Files/Alignment_Files/ERR5743893.sorted.bam > ERR5743893.vcf 
+   72  ls -l ERR5743893.vcf
+   73  mkdir /workspaces/Whole-Genome-Sequencing/Output_Files/Varriant_Calling
+   74  mv /workspaces/Whole-Genome-Sequencing/Indexing ./ERR5743893.vcf /workspaces/Whole-Genome-Sequencing/Output_Files/Varriant_Calling/
+   75  ls /workspaces/Whole-Genome-Sequencing/Output_Files/Variant_Calling
+   76  ls /workspaces/Whole-Genome-Sequencing/Output_Files/Variant_Calling 
+   77  history > WGS_workflow.txt
