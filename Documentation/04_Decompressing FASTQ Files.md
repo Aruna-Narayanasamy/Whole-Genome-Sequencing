@@ -1,2 +1,2 @@
-# Decompressing FASTQ Files#
+
 The .gz FASTQ files were decompressed using gunzip commands:
