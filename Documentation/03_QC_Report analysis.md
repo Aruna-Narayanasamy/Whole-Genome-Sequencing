@@ -24,5 +24,15 @@
   - Codespace will show a prompt to **Open in Browser**.
   - In the browser, the QC report files will be displayed and can be opened correctly.
 
+ ## 4.Decompressing FASTQ Files 
+  - The raw sequencing reads were provided in compressed .gz format.
+  - The .gz FASTQ files were decompressed using gunzip commands:
+  - **Commands**: gunzip -dc ERR5743893_1.fastq.gz > /workspaces/Whole-Genome-Sequencing/Output_Files/ERR5743893_1.fastq
+    
+     gunzip -dc ./ERR5743893_2.fastq.gz > /workspaces/Whole-Genome-Sequencing/Output_Files/ERR5743893_2.fastq
+    
+  - This unzipped files stored in Output_Files. **(ERR5743893_1.fastq, ERR5743893_2.fastq)**
+
+
 
 
