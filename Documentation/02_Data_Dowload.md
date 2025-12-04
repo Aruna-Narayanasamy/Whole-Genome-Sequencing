@@ -25,12 +25,9 @@
      [ERR5743893_1.fastq.gz (FTP Download)](ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR574/003/ERR5743893/ERR5743893_1.fastq.gz)
      [ERR5743893_2.fastq.gz (FTP Download)](ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR574/003/ERR5743893/ERR5743893_2.fastq.gz)
 
-  ## 3.Decompressing FASTQ Files
-   - The .gz FASTQ files were decompressed using gunzip commands:
-     - gunzip ERR5743893_1.fastq.gz
-     - gunzip ERR5743893_2.fastq.gz
-  - After decompressing the FASTQ files, the resulting ERR5743893_1.fastq and ERR5743893_2.fastq saved in Output_Files.
+  
       
      
+
 
 
