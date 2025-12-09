@@ -5,7 +5,7 @@
   - **Command**: mkdir -p Output_Files/Indexing
     
  ## 2.Copying the Reference Genome into the Indexing Directory
-  - The downloaded reference genome (MN908947.fasta) from the Reference_Genome folder was copied into the indexing folder.
+  - The uploded reference genome (MN908947.fasta) from the Reference_Genome folder was copied into the indexing folder.
   - **Command**: cp /workspaces/Whole-Genome-Sequencing/Reference_Genome/MN908947.fasta /workspaces/Whole-Genome-Sequencing/Output_Files/Indexing/
   - **Final Location**: Output_Files/Indexing/MN908947.3.fasta
     
