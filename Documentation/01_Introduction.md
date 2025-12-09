@@ -39,4 +39,13 @@
    9. Variant Annotation
    10. Variant Validation
 
+## Tools used here
+  - FastQC
+  - BWA
+  - Samtools
+  - FreeBayes
+  - wget
+  - gunzip
+
+
 
