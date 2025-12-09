@@ -9,9 +9,13 @@
 
  ## 2.Raw sequencing data(FASTQ File)
    - Raw sequencing reads for SARS-CoV-2 were downloaded from ENA using the run ID
+     
      -**Run ID**: ERR5743893
+     
      -**Type**: Paired-end sequencing
+     
      -**platform**: Illumina
+     
    - ENA provides two FASTQ files for paired-end reads
      - **ERR5743893_1.fastq.gz**
      - **ERR5743893_2.fastq.gz**
@@ -26,6 +30,7 @@
   
       
      
+
 
 
 
