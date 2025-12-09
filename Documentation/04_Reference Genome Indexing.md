@@ -9,7 +9,7 @@
   - **Command**: cp /workspaces/Whole-Genome-Sequencing/Reference_Genome/MN908947.fasta /workspaces/Whole-Genome-Sequencing/Output_Files/Indexing/
   - **Final Location**: Output_Files/Indexing/MN908947.3.fasta
     
- ## 2.Indexing the reference genome with BWA  
+ ## 3.Indexing the reference genome with BWA  
   - BWA indexing generates essential index files of **.amb, .ann, .bwt, .pac, .sa** required for alignment.
   - **Command**: bwa index /workspaces/Whole-Genome-Sequencing/Output_Files/Indexing/MN908947.3.fasta
   - After indexing files are created in Output_Files/Indexing.
