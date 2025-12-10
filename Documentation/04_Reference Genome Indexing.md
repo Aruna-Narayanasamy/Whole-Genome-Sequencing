@@ -1,7 +1,7 @@
 # Reference Genome Indexing
  -To perform read alignment and variant calling, the SARS-CoV-2 reference genome (MN908947.3) must be indexed.
  ## 1.Creating the Indexing Directory
-  - A folder was created inside the Output_Files to store all reference genome related index Files.
+  - A folder (Indexing) was created inside the Output_Files to store all reference genome related index Files.
   - **Command**: mkdir -p Output_Files/Indexing
     
  ## 2.Copying the Reference Genome into the Indexing Directory
