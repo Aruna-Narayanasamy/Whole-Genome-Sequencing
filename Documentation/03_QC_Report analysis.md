@@ -3,7 +3,7 @@
  - It also include expalnation of how to view FASTQC HTML reports.
 
  ## 1.Creating main output directory
-  - Before running FastQC, the main directory (Output_Files) for storing all analysis outputs was created.
+  - Before running FastQC, the main directory (Output_Files) is created for storing all analysis outputs files.
   - **Command**: mkdir /workspaces/Whole-Genome-Sequencing/Output_Files
   - It will contain QC reports, Indexing files, Alignment files, variant Calling files, decompressed FASTQ files.
 
@@ -38,6 +38,7 @@
      gunzip -dc ./ERR5743893_2.fastq.gz > /workspaces/Whole-Genome-Sequencing/Output_Files/ERR5743893_2.fastq
     
   - This unzipped files stored in Output_Files. **(ERR5743893_1.fastq, ERR5743893_2.fastq)**
+
 
 
 
