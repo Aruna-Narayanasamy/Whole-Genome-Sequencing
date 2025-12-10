@@ -44,8 +44,8 @@
   - BWA
   - Samtools
   - FreeBayes
-  - wget
   - gunzip
+
 
 
 
