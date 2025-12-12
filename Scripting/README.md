@@ -1,10 +1,10 @@
-# Script_Of_WGS.sh
+# Scripts
 
 This folder contains the Bash script used for running the **Whole Genome Sequencing (WGS) Pipeline**.
-## Script Name
-**Script_Of_WGS.sh**
+
 ## Purpose
-  This script automates:
+  These scripts provide a step-by-step sequence of commands for:
+
 
    - Downloading FASTQ files  
    - Running FastQC  
@@ -13,7 +13,26 @@ This folder contains the Bash script used for running the **Whole Genome Sequenc
    - Read alignment (BWA-MEM)  
    - Converting SAM → BAM → Sorted BAM  
    - Variant calling with FreeBayes  
-   - Saving workflow history  
+   - Saving workflow history
+
+---
+
+## Files Included
+
+### 1. `Scripts_of_WGS.sh`
+A shell script containing the workflow commands for
+
+  - Reference preparation  
+  - Quality control  
+  - Alignment  
+  - Duplicate marking  
+  - Variant calling  
+  - Annotation  
+
+### 2. `WGS_Workflow.txt`
+- A text file containing the workflow steps used during analysis.
+  
+---
 
 ## How to Run the Script
 
