@@ -33,4 +33,15 @@
    Raw_Data/
          FASTQ Files downloded from SRA
 
+  Reference_Genome/
+        Fasta file dowloded from NCBI database (MN908947.3.fasta)
+
+  Output_Files/
+         Unzipped SRR files
+         QC_Files
+         Indexing_Files
+         Alignment_Files
+         Variant_Calling
+```
+
 
