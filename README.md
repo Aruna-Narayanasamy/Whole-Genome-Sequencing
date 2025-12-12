@@ -14,4 +14,4 @@
    - [01. Introduction of this project](Documentation/01_Introduction.md)
    - [02. Data downloaded related to this project](Documentation/02_Data_Download.md)
    - [03. QC files](Documentation/03_QC_Report_analysis.md)
-   - [04. preparation of reference 
+   - [04. preparation of reference genome](Documentation/04_Reference Genome 
