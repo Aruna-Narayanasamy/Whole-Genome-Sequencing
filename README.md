@@ -26,3 +26,9 @@
    -[Scripts of WGS](Scripting/Scripts_of_WGS.sh)
    
    -[WGS workflow txt](WGS_Workflow.txt)
+
+   ## Workflow Structure
+
+   ```
+   Raw_Data/
+         FASTQ Files downloded from SRA
