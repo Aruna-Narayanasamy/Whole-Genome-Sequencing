@@ -20,16 +20,17 @@
      - **ERR5743893_1.fastq.gz**
      - **ERR5743893_2.fastq.gz**
    - **Download Commands given in CodeSpace:**
-       1.wget -nc (ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR574/003/ERR5743893/ERR5743893_1.fastq.gz)
-       2.wget -nc (ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR574/003/ERR5743893/ERR5743893_2.fastq.gz)
+     ```bash
+       wget -nc (ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR574/003/ERR5743893/ERR5743893_1.fastq.gz)
+       wget -nc (ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR574/003/ERR5743893/ERR5743893_2.fastq.gz)
+     ```
      - Files are stored in Raw_Data directory
      
-     [ERR5743893_1.fastq.gz (FTP Download)](ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR574/003/ERR5743893/ERR5743893_1.fastq.gz)
-     [ERR5743893_2.fastq.gz (FTP Download)](ftp://ftp.sra.ebi.ac.uk/vol1/fastq/ERR574/003/ERR5743893/ERR5743893_2.fastq.gz)
-
+    
   
       
      
+
 
 
 
