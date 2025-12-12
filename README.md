@@ -19,7 +19,10 @@
    - [06. Variant Calling](Documentation/06_Variant_Calling.md)
 
   ## Workflow Scripts
-   The `scripting` folder contains the Bash workflow script and workflow notes
-    -[Scripting of README](Scripting/README.md)
-    -[Scripts of WGS](Scripting/Scripts_of_WGS.sh)
-    -[WGS workflow txt](WGS_Workflow.txt)
+   -The scripting folder contains the Bash workflow script and workflow notes
+   
+   -[Scripting of README](Scripting/README.md)
+   
+   -[Scripts of WGS](Scripting/Scripts_of_WGS.sh)
+   
+   -[WGS workflow txt](WGS_Workflow.txt)
