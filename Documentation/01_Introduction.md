@@ -21,11 +21,9 @@
    
  ## Objective of this project
   - This project aims to perform *Whole Genome Sequencing analysis of SARS-CoV-2 using publicly available reference and raw sequencing data*
-  - The project will:
-       - Detection of mutations across the SARS-CoV-2 genome
-       - Monitoring lineage evolution
-       - It will support variant classification
-   - Real sequencing reads and the SARS‑CoV‑2 reference genome (e.g., Wuhan‑Hu‑1) will be used to demonstrate a complete WGS analysis pipeline from raw data to annotated variants.
+  - The project will give:
+       - Computational pipeline for SARS-CoV-2 WGS data including QC, alignment, file processing, and variant generati
+  - Real sequencing reads and the SARS‑CoV‑2 reference genome (e.g., Wuhan‑Hu‑1) will be used to demonstrate a complete WGS analysis pipeline from raw data to annotated variants.
 
  ## Workflow
    1. Data retrieval from ENA database
@@ -39,12 +37,7 @@
    9. Variant Annotation
    10. Variant Validation
 
-## Tools used here
-  - FastQC
-  - BWA
-  - Samtools
-  - FreeBayes
-  - gunzip
+
 
 
 
