@@ -19,5 +19,7 @@
    - [06. Variant Calling](Documentation/06_Variant_Calling.md)
 
   ## Workflow Scripts
-    - This folder contains all executable scripts used in the Whole Genome Sequencing workflow of Covid 19, including setup, quality control, alignment, and variant analysis steps.
-    - 
+   The `scripting` folder contains the Bash workflow script and workflow notes
+    -[Scripting of README](Scripting/README.md)
+    -[Scripts of WGS](Scripting/Scripts_of_WGS.sh)
+    -[WGS workflow txt](WGS_Workflow.txt)
